@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# exec /share/vim/vim73/vim "$@"
+exec "/c/Program Files/Vim/vim73/vim.exe" "$@"
