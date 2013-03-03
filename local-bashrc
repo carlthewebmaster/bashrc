@@ -28,6 +28,9 @@ git_prompt ()
 # Thy holy prompt.
 PROMPT_COMMAND='PS1="${c_user}\u${c_reset}@${c_light_red}\h${c_reset}:${c_path}\w${c_reset}$(git_prompt)\$ "'
 
+# Set directory color - needed for MSYSGIT on Win7
+export LS_COLORS='di=01;35'
+
 # Alias Setup
 # alias anno2go='. /root/local-dev/scripts/annotum2go.sh'
 # alias anno2stop='. /root/local-dev/scripts/annotum2stop.sh'
