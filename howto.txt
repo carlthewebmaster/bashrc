@@ -1,4 +1,0 @@
-git clone git://github.com/carlthewebmaster/vimfiles.txt ~/.vim
-cd ~/.vim
-git submodule update --init
-ln -s ~/.vim/vimrc ~/.vimrc
