@@ -3,11 +3,17 @@
 
 
 ```bash
-git clone http://github.com/carlthewebmaster/dotfiles.git ~/.vim
-cd ~/.vim
+git clone http://github.com/carlthewebmaster/vimfiles.git 
+cd ~/vimfiles
 git submodule update --init
-ln -s ~/.vim/vimrc ~/.vimrc
-cat ~/.vim/local-bashrc >> ~/.bashrc
+ln -s ~/vimfiles/vimrc ~/.vimrc
+
+# If desired:
+cat ~/vimfiles/local-bashrc >> ~/.bashrc
 ```
 
-> Note: on a Windows machine, use the _vimrc
+> Note: on a Windows machine with git for windows (bash) use:
+
+```
+ln -s ~/vimfiles/vimrc ~/_vimrc
+```
