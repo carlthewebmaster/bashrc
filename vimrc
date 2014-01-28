@@ -8,7 +8,8 @@ filetype indent on      " activates indenting for files
 set autoindent          " auto indenting
 set number              " line numbers
 set t_Co=256
-colorscheme desert      " colorscheme desert
-highlight LineNr ctermbg=lightgray ctermfg=black
+colorscheme molokai     " colorscheme desert
+set statusline=%<%F%h%m%r\ [%{&ff}]\ %{fugitive#statusline()}\ (%{strftime(\"%H:%M\ %d/%m/%Y\",getftime(expand(\"%:p\")))})%=%l,%c%V\ %P
+" highlight LineNr ctermbg=lightgray ctermfg=black
 set nobackup            " get rid of anoying ~file
 set laststatus=2
