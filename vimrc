@@ -1,6 +1,7 @@
 set nocp
 execute pathogen#infect()
 map <C-n> :NERDTreeToggle<CR>
+" cmap w!! w !sudo tee % >/dev/null
 filetype plugin indent on
 set backspace=2         " backspace in insert mode works like normal editor
 syntax on               " syntax highlighting
